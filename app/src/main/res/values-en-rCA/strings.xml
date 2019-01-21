@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab1</string>
+    <string name="app_name">Lab2</string>
     <string name="hello_message">Hello from Canada</string>
     <string name="ButtonText">I\'m a button</string>
+    <string name="button1">button</string>
+    <string name="check">Check this out!</string>
+    <string name="widget">Here are my widgets:</string>
+    <string name="switch1">Switch on / off</string>
+    <string name="type">Type your answer in here</string>
 </resources>

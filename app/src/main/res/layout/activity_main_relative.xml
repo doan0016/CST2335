@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" >
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/widget"
+        android:textSize="30dp"/>
+
+    <View android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView2"
+        android:layout_toLeftOf="@id/strut"
+        />
+
+    <ImageButton
+
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@id/button4"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/flag" />
+
+    <View android:id="@+id/strut1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/checkbox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/check"
+        android:layout_toLeftOf="@id/strut1"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/text3"
+
+        />
+
+    <Switch
+
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/switch1"
+        android:layout_toEndOf="@id/checkbox"
+        android:layout_below="@id/imageButton2"
+
+        />
+
+    <EditText
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/type"
+        android:layout_below="@id/switch1"/>
+
+</RelativeLayout>

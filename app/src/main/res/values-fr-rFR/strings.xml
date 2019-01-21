@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="hello_message">Hello from Canada</string>
+    <string name="ButtonText">I\'m a button</string>
+    <string name="button1">boutton</string>
+    <string name="check">Checker ici</string>
+    <string name="widget">Cest mon widgets</string>
+    <string name="switch1"> allume/eteint</string>
+    <string name="type">Typer ton reponse ici</string>
+</resources>

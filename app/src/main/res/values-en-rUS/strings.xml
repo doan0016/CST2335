@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="hello_message">Hello from Canada</string>
+    <string name="ButtonText">I\'m a button</string>
+    <string name="button1">I\'m a button</string>
+    <string name="check">I\'m a button</string>
+    <string name="widget">I\'m a button</string>
+    <string name="switch1">I\'m a button</string>
+    <string name="type">I\'m a button</string>
+</resources>
