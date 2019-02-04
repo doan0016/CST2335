@@ -8,4 +8,13 @@
     <string name="widget">Here are my widgets:</string>
     <string name="switch1">Switch on / off</string>
     <string name="type">Type your answer in here</string>
+    <string name="enterEmail">Enter your email</string>
+    <string name="typeEmail">Type email here</string>
+    <string name="enterPass">Enter your password</string>
+
+    <string name="login">Login</string>
+    <string name="profile">Your profile</string>
+    <string name="name">Your name:</string>
+    <string name="enterName">Enter your name</string>
+    <string name="picture">Your picture:</string>
 </resources>

@@ -8,4 +8,14 @@
     <string name="widget">Cest mon widgets</string>
     <string name="switch1"> allume/eteint</string>
     <string name="type">Typer ton reponse ici</string>
+    <string name="enterEmail">Entree votre email</string>
+    <string name="typeEmail">Typer email ici</string>
+    <string name="enterPass">Entre votre password</string>
+
+    <string name="login">Loger</string>
+    <string name="profile">Ton profile</string>
+    <string name="name">Ton nom:</string>
+    <string name="enterName">Entre ton nom</string>
+    <string name="picture">Votre image:</string>
+
 </resources>
