@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.graphics.Bitmap;
 import android.widget.ImageView;
@@ -23,6 +24,10 @@ public class ProfileActivity extends AppCompatActivity {
 
         //ImageButton ib = (ImageButton)findViewById(R.id.imageButton5);
         Intent loginIntent = getIntent();
+        String item1 = loginIntent.getStringExtra("item1");
+
+        EditText enterText = (EditText)findViewById(R.id.editText4);
+        enterText.setText(item1);
 
         mImageButton = (ImageButton)findViewById(R.id.imageButton5);
         mImageButton.setOnClickListener ( bt -> {
@@ -32,6 +37,13 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
             }
         });
+
+        Button save = (Button) findViewById(R.id.GoToChat);
+        Intent save1 = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+        save.setOnClickListener(c -> {
+            startActivityForResult(save1, 77);
+        });
+
         Log.e(ACTIVITY_NAME, "In function:" + "onCreate");
     }
     ;

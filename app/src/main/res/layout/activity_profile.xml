@@ -52,4 +52,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/picture_frame" />
+
+    <Button
+        android:id="@+id/GoToChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to chat" />
 </LinearLayout>

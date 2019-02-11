@@ -18,4 +18,8 @@
     <string name="enterName">Entre ton nom</string>
     <string name="picture">Votre image:</string>
 
+    <string name="SendBtn">Senter</string>
+    <string name="ReceiveBtn">Recever</string>
+    <string name="ChatInput">Typer ici</string>
+
 </resources>

@@ -26,9 +26,10 @@ public class MainActivity extends AppCompatActivity {
         typeField.setText(savedString);
 
         Button save = (Button) findViewById(R.id.button2);
+        Intent save1 = new Intent(MainActivity.this, ProfileActivity.class);
         save.setOnClickListener(bt -> {
-            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
-
+            save1.putExtra("item1", typeField.getText().toString());
+            startActivityForResult( save1, 345);
         });
 
 
