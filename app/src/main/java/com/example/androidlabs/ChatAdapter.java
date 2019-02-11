@@ -38,7 +38,7 @@ public class ChatAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = convertView;
+        View view = null;
 
         if (view == null){
             if (ChatMessages.get(position).isSend()){
@@ -47,9 +47,10 @@ public class ChatAdapter extends BaseAdapter {
             }else {
                 view = inflater.inflate(R.layout.activity_main_receive, null);
             }
-            TextView messageText = (TextView)view.findViewById(R.id.textViewMessage);
-            messageText.setText(ChatMessages.get(position).message);
+
         }
+        TextView messageText = (TextView)view.findViewById(R.id.textMsgs);
+        messageText.setText(ChatMessages.get(position).message);
         return view;
     }
 }

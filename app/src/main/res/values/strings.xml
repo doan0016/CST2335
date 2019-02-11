@@ -17,9 +17,9 @@
     <string name="enterName">Enter your name</string>
     <string name="picture">Your picture:</string>
 
-    <string name="SendBtn">Your name:</string>
-    <string name="ReceiveBtn">Enter your name</string>
-    <string name="ChatInput">Your picture:</string>
+    <string name="SendBtn">Send</string>
+    <string name="ReceiveBtn">Receive</string>
+    <string name="ChatInput">Type here</string>
 
 
 

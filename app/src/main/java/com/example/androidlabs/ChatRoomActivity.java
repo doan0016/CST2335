@@ -28,24 +28,25 @@ public class ChatRoomActivity extends AppCompatActivity {
         listView = (ListView)findViewById(R.id.ListView);
         editText = (EditText)findViewById(R.id.ChatInput);
 
+        ChatAdapter chatAdpt = new ChatAdapter(listMessage, getApplicationContext());
 
-        sendBtn.setOnClickListener(c -> {
+        sendBtn.setOnClickListener(bt -> {
             String message = editText.getText().toString();
             ChatMessages a = new ChatMessages(message, true);
             listMessage.add(a);
             editText.setText("");
-            ChatAdapter chatAdpt = new ChatAdapter(listMessage, getApplicationContext());
-            listView.setAdapter(chatAdpt);
+            chatAdpt.notifyDataSetChanged();
+
         });
 
-        receiveBtn.setOnClickListener(d -> {
+        receiveBtn.setOnClickListener(c -> {
             String message = editText.getText().toString();
             ChatMessages a = new ChatMessages(message, false);
             listMessage.add(a);
             editText.setText("");
-            ChatAdapter chatAdpt = new ChatAdapter(listMessage, getApplicationContext());
-            listView.setAdapter(chatAdpt);
+            chatAdpt.notifyDataSetChanged();
         });
+        listView.setAdapter(chatAdpt);
     }
 
 
