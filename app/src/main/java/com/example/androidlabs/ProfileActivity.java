@@ -44,6 +44,12 @@ public class ProfileActivity extends AppCompatActivity {
             startActivityForResult(save1, 77);
         });
 
+        Button toolbarBtn = (Button) findViewById(R.id.toolbarBtn);
+        Intent toolbarIntent = new Intent(ProfileActivity.this, TestToolbar.class);
+        toolbarBtn.setOnClickListener(d -> {
+            startActivity(toolbarIntent);
+        });
+
         Log.e(ACTIVITY_NAME, "In function:" + "onCreate");
     }
     ;

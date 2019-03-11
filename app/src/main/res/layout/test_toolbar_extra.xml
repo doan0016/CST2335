@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/row_receive" />
+
+    <TextView
+        android:id="@+id/newMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your new message?" />
+
+    <EditText
+        android:id="@+id/typeHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type here"
+        android:inputType="textPersonName|text" />
+
+<!--
+    <Button
+        android:id="@+id/extraBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+-->
+
+
+</LinearLayout>
