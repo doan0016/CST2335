@@ -35,7 +35,7 @@ public class TestToolbar extends AppCompatActivity {
 
 
 
-        Toast.makeText(this, "Welcome to Menu Example", Toast.LENGTH_LONG).show();
+
     }
 
     @Override

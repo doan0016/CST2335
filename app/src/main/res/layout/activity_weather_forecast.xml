@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherForecast">
+
+
+    <ImageView
+        android:id="@+id/weatherView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="visible"
+
+
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+    android:id="@+id/currentTemp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/weatherView"
+    android:text="Current Temp" />
+
+
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/currentTemp"
+        android:layout_below="@id/weatherView"
+        android:text="Min Temp" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/minTemp"
+        android:layout_below="@id/weatherView"
+
+        android:text="Max Temp" />
+
+    <TextView
+        android:id="@+id/uvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/minTemp"
+
+        android:text="UV Rating" />
+
+    <TextView
+        android:id="@+id/latView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/uvRating"
+
+        android:text="UV Rating" />
+
+    <TextView
+        android:id="@+id/longView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/latView"
+
+        android:text="UV Rating" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@id/uvRating"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar"/>
+</RelativeLayout>

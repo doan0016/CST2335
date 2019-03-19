@@ -50,6 +50,12 @@ public class ProfileActivity extends AppCompatActivity {
             startActivity(toolbarIntent);
         });
 
+        Button weatherBtn = (Button) findViewById(R.id.weatherBtn);
+        Intent weatherIntent = new Intent(ProfileActivity.this, WeatherForecast.class);
+        weatherBtn.setOnClickListener(e -> {
+            startActivity(weatherIntent);
+        });
+
         Log.e(ACTIVITY_NAME, "In function:" + "onCreate");
     }
     ;
